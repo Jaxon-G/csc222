@@ -5,8 +5,9 @@ using namespace std;
 // Your function goes here
 bool is_even(int x) {
   
-    return true;
+    bool is_even = ((x % 2 == 0) ? true : false);
     
+    return is_even;
 }
 
 
