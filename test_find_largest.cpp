@@ -4,7 +4,15 @@ using namespace std;
 
 // Your function goes here
 double find_largest(double a, double b) {
-    return 14;    
+    if (a > b) {
+        return a;
+    }
+    else if (b > a) {
+        return b;
+    }
+    else {
+        return a;
+    }
 }
 
 
