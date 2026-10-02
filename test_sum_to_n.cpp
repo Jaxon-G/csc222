@@ -7,7 +7,9 @@ double sum_to_n(int n) {
     if (n == 0) {
         return 1;
     } else {
-        return 0;
+        int temp_addition = sum_to_n(n-1);
+        int result = n + temp_addition;
+        return result;
     }
 }
 
