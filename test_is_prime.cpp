@@ -4,6 +4,10 @@ using namespace std;
 
 // Your function goes here
 bool is_prime(int n) {
+    if (n <= 1) return false;
+
+    if (n == 2) return true;
+
     if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0 || n % 9 == 0) {
         return false;
     } else {
