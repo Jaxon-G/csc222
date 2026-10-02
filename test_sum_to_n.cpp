@@ -4,7 +4,7 @@ using namespace std;
 
 // Your function goes here
 double sum_to_n(int n) {
-    if (n == 0) {
+    if (n == 1) {
         return 1;
     } else {
         int temp_addition = sum_to_n(n-1);
