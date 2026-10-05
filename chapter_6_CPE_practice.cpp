@@ -2,15 +2,14 @@
 #include <string>
 using namespace std;
 
-string multi_copy(string s = "_", int n = 1) {
-    string clone_str;
-    while (n--)
-        clone_str += s;
-    return clone_str;
-}
-
 int main() {
-    string pattern = "!@";
-    cout << multi_copy(pattern) << multi_copy () << multi_copy("#", 3) << endl;
+    string s1 = "ACC";
+    string s2 = "GCTAA";
+    string s;
+    s1.swap(s2);
+    s2.swap(s);
+    s.swap(s2);
+    cout << s1 << endl;
     return 0;
 }
+
