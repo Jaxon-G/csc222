@@ -3,13 +3,10 @@
 using namespace std;
 
 int main() {
-    string s1 = "ACC";
-    string s2 = "GCTAA";
-    string s;
-    s1.swap(s2);
-    s2.swap(s);
-    s.swap(s2);
-    cout << s1 << endl;
+    string s = "School";
+    int i = s.compare("Grade") > 0;
+    int j = s.compare("High") < 0;
+    cout << i << j << endl;
+
     return 0;
 }
-
