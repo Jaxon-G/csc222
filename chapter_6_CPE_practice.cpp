@@ -2,17 +2,10 @@
 #include <string>
 using namespace std;
 
-namespace alpha {
-    int i = 4;
-}
-namespace beta {
-    int i = alpha::i + 1;
-}
 int main() {
-    beta::i += alpha::i;
-    {
-        using namespace beta;
-        cout << i << endl;
-    }
+    string s = "ABCDE";
+    s.append(s.substr(3)).push_back(s[s.length() - 2]);
+    cout << s << endl;
+
     return 0;
 }
