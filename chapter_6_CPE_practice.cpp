@@ -1,18 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-namespace ACC {
-    int program_count = 4;
-}
-namespace ACC {
-    int programs2024 = program_count + 2;
-}
 int main() {
-    ACC::program_count /= 2;
-    {
-        using namespace ACC;
-        programs2024++;
-    }
-    cout << ACC::program_count << ' ' << ACC::programs2024 << endl;
+    string s = "CS@ACC";
+    for (int i = 1; i < s.length(); i += 2)
+        s[i - 1] = s[i] + 'a' - 'A';
+    cout << s << endl;
     return 0;
 }
