@@ -3,10 +3,9 @@
 using namespace std;
 
 int main() {
-    string s = "School";
-    int i = s.compare("Grade") > 0;
-    int j = s.compare("High") < 0;
+    string s1 = "Abc", s2 = "A";
+    int i = s1.compare(s2) < 0;
+    int j = s1.length() > s2.length();
     cout << i << j << endl;
-
     return 0;
 }
