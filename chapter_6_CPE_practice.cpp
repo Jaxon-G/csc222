@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    int n = 2;
-    string s = "2";
-    cout << (s == n) <<  endl;
+    string s = "ABC";
+    s.append(s.substr(2)).push_back(s[s.length() - 3]);
+    cout << s << endl;
     return 0;
 }
