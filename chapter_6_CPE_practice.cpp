@@ -3,9 +3,10 @@
 using namespace std;
 
 int main() {
-    string s1 = "Abc", s2 = "A";
-    int i = s1.compare(s2) < 0;
-    int j = s1.length() > s2.length();
-    cout << i << j << endl;
+    string s1, s2;
+    s1 = "XYZ";
+    s2 = s1.substr(1, 1) + s1.substr(2) + s1.substr();
+    s1 = s2.substr(1, 1) + s2.substr(2) + s2.substr();
+    cout << s1 << ' ' << s2 << endl;
     return 0;
 }
