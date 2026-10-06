@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    string s = "x";
-    cout << s + "y" + "z" << endl;
+    string s = "z";
+    cout << "x" + "y" + s << endl;
     return 0;
 }
