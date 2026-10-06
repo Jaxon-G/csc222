@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-    string s = "ABCDEFGHIJ";
-    cout << s.substr(2, 5).substr(2).substr() << endl;
+    string s1 = "ACC";
+    string s2 = "ACC!";
+    cout << (s1.compare(s2) < 0) << endl;
     return 0;
 }
