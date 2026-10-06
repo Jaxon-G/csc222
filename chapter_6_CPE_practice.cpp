@@ -1,11 +1,21 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
+namespace A {
+    int n = 1;
+}
+
+namespace B {
+    int n = 2;
+}
+
 int main() {
-    string s = "CS@ACC";
-    for (int i = 1; i < s.length(); i += 2)
-        s[i - 1] = s[i] + 'a' - 'A';
-    cout << s << endl;
+    { using namespace A;
+        B::n = n + 1;
+    }
+    { using namespace B;
+        A::n = n + 1;
+    }
+    cout << A::n << ' ' << B::n << endl;
     return 0;
 }
