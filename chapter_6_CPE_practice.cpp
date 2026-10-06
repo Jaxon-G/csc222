@@ -3,8 +3,7 @@
 using namespace std;
 
 int main() {
-    string s = "PQ";
-    s.append(s).push_back(s[s.length() - 1]);
-    cout << s << endl;
+    string s = "ABCDEFGHIJ";
+    cout << s.substr(2, 5).substr(2).substr() << endl;
     return 0;
 }
