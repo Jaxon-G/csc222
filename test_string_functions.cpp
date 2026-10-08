@@ -5,7 +5,11 @@ using namespace std;
 
 // Your function goes here
 string reverse_string(string word) {
-    return "happy";
+    string new_word;
+    for (int i = word.length()-1; i > 0; i--) {
+        new_word.push_back(word[i]);
+    }
+    return word;
 }
 
 
