@@ -4,17 +4,14 @@
 using namespace std;
 
 // Your function goes here
-string reverse_string(string word) {
-    string new_word;
-    for (int i = word.length()-1; i > 0; i--) {
-        new_word.push_back(word[i]);
-    }
-    return word;
+string count_vowels(string s) {
+    return "happy";
 }
 
-
-TEST_CASE("reverse_string(s) returns s backwards") {
-    CHECK(reverse_string("happy") == "yppah");
-    CHECK(reverse_string("GHC!") == "!CHG");
-    CHECK(reverse_string("The end.") == ".dne ehT");
+TEST_CASE("count_vowels counts lowercase vowels") {
+    CHECK(count_vowels("") == 0);
+    CHECK(count_vowels("xyz") == 0);
+    CHECK(count_vowels("hello") == 2);
+    CHECK(count_vowels("aeiou") == 5);
+    CHECK(count_vowels("MISSISSIPPI") == 4);
 }
