@@ -5,7 +5,12 @@ using namespace std;
 
 // Your function goes here:
 int count_char(string s, char c) {
-    return 1;
+    int count = 0;
+    for(int i = 0; int < s.length(); i++) {
+        
+    }
+
+    return count;
 }
 
 TEST_CASE("count_char(s, ch) counts number of times ch occurs in s") {
