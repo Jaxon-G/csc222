@@ -5,7 +5,9 @@ using namespace std;
 
 // Your function goes here
 string shout(string s){
-    return "OKAY!";
+    string new_string;
+    new_string = s.substr(0, s.length()-2) + "!";
+    return new_string;
 }
 
 TEST_CASE("shout turns an exclaimation into a demand") {
