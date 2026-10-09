@@ -5,7 +5,16 @@ using namespace std;
 
 // Your function goes here
 string mock(string s) {
-    return "oKaY";
+    string result;
+
+    for(int i = 0; i < s.length(); i++){
+        if (isalpha(s[i]){
+                   //idk
+        }
+        else {
+            result += s[i];
+        }
+    }
 }
 
 TEST_CASE("mock turns a string into a SpongeBob meme") {
