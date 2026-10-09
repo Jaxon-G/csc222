@@ -4,8 +4,10 @@
 using namespace std;
 
 // Your function goes here
-string count_vowels(string s) {
-    return "happy";
+int count_vowels(string s) {
+    for (int i = 0; i < s.length(); i++){
+
+    }
 }
 
 TEST_CASE("count_vowels counts lowercase vowels") {
