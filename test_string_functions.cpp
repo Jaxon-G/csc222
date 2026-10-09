@@ -5,9 +5,15 @@ using namespace std;
 
 // Your function goes here
 int count_vowels(string s) {
+    int count = 0;
+    string vowels = "aeiouAEIOU";
     for (int i = 0; i < s.length(); i++){
-
+        if (s[i] == vowels[i]){
+            count++;
+        }
     }
+
+    return count;
 }
 
 TEST_CASE("count_vowels counts lowercase vowels") {
