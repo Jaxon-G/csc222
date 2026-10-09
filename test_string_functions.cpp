@@ -4,25 +4,17 @@
 using namespace std;
 
 // Your function goes here
-int count_vowels(string s) {
-    int count = 0;
-    string vowels = "aeiouAEIOU";
-    for (int i = 0; i < s.length(); i++){
-        for (int j = 0; j < vowels.length(); j++){
-            if (s[i] == vowels[j]){
-                count++;
-                break;
-            }   
-        }
-    }
-
-    return count;
+bool is_palindrome(string s){
+    return true;
 }
 
-TEST_CASE("count_vowels counts lowercase vowels") {
-    CHECK(count_vowels("") == 0);
-    CHECK(count_vowels("xyz") == 0);
-    CHECK(count_vowels("hello") == 2);
-    CHECK(count_vowels("aeiou") == 5);
-    CHECK(count_vowels("MISSISSIPPI") == 4);
+
+
+
+TEST_CASE("is_palindrome detects palindromes") {
+    CHECK(is_palindrome("") == true);
+    CHECK(is_palindrome("a") == true);
+    CHECK(is_palindrome("aba") == true);
+    CHECK(is_palindrome("abba") == true);
+    CHECK(is_palindrome("abc") == false);
 }
