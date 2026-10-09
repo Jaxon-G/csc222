@@ -6,8 +6,10 @@ using namespace std;
 // Your function goes here:
 int count_char(string s, char c) {
     int count = 0;
-    for(int i = 0; int < s.length(); i++) {
-        
+    for(int i = 0; i < s.length(); i++) {
+        if (tolower(s[i]) == tolower(c)){
+            count++;
+        }
     }
 
     return count;
