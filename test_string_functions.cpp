@@ -7,6 +7,11 @@ using namespace std;
 int count_words(string s){
     char space = ' ';
     int words = 0;
+    
+    if(s.length() == 0){
+        return 0;
+    }
+
     for (int i = 0; i < s.length(); i++){
         if(s[i] == space){
             words++;
