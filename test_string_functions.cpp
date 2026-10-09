@@ -14,7 +14,7 @@ bool is_palindrome(string s){
             return false;
         }
     }
-    return false;
+    return true;
 }
 
 TEST_CASE("is_palindrome detects palindromes") {
