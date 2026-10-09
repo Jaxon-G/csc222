@@ -4,20 +4,15 @@
 using namespace std;
 
 // Your function goes here
-string shout(string s){
-    string new_string;
-    for (int i = 0; i < s.length(); i++){
-        new_string += toupper(s[i]);
-    }
-    new_string = new_string.substr(0, s.length()-1) + "!";
-    return new_string;
+string mock(string s) {
+    return "oKaY";
 }
 
-TEST_CASE("shout turns an exclaimation into a demand") {
-    CHECK(shout("Don't touch that.") == "DON'T TOUCH THAT!");
-    CHECK(shout("Let's go.") == "LET'S GO!");
-    CHECK(shout("Leave it there!") == "LEAVE IT THERE!");
-    CHECK(shout("DO IT!") == "DO IT!");
-    
+TEST_CASE("mock turns a string into a SpongeBob meme") {
+    CHECK(mock("We are learning C++.") == "wE aRe lEaRnInG c++.");
+    CHECK(
+        mock("I'm not sure how to do this.") ==
+        "i'M nOt SuRe hOw To Do ThIs."
+    );
+    CHECK(mock("Mississippi") == "mIsSiSsIpPi");
 }
-
