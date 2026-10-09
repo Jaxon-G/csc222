@@ -3,7 +3,7 @@
 #include <doctest.h>
 using namespace std;
 
-// Your function goes here
+// Your function goes here:
 string mock(string s) {
     string result;
     bool uppercase = false;
