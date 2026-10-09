@@ -4,32 +4,13 @@
 using namespace std;
 
 // Your function goes here:
-string mock(string s) {
-    string result;
-    bool uppercase = false;
-    for(int i = 0; i < s.length(); i++){
-        if (isalpha(s[i])){
-            if (uppercase){
-                result += toupper(s[i]);
-            }
-            else {
-                result += tolower(s[i]);
-            }
-            uppercase = !uppercase;
-        }
-        else {
-            result += s[i];
-        }
-    }
-    return result;
+int count_char(string s, char c) {
+    return 1;
 }
 
-
-TEST_CASE("mock turns a string into a SpongeBob meme") {
-    CHECK(mock("We are learning C++.") == "wE aRe lEaRnInG c++.");
-    CHECK(
-        mock("I'm not sure how to do this.") ==
-        "i'M nOt SuRe hOw To Do ThIs."
-    );
-    CHECK(mock("Mississippi") == "mIsSiSsIpPi");
+TEST_CASE("count_char(s, ch) counts number of times ch occurs in s") {
+    CHECK(count_char("abcd", 'c') == 1);
+    CHECK(count_char("abcd", 'x') == 0);
+    CHECK(count_char("Excellent!", 'e') == 3);
+    CHECK(count_char("Abracadabra", 'a') == 5);
 }
