@@ -4,23 +4,13 @@
 using namespace std;
 
 // Your function goes here
-bool is_palindrome(string s){
-    if (s.length() <= 1){
-        return true;
-    }
-    
-    for (int i = 0; i < s.length() / 2; i++){
-        if (s[i] != s[s.length()-1-i]){
-            return false;
-        }
-    }
-    return true;
+int count_words(string s){
+    return 1;
 }
 
-TEST_CASE("is_palindrome detects palindromes") {
-    CHECK(is_palindrome("") == true);
-    CHECK(is_palindrome("a") == true);
-    CHECK(is_palindrome("aba") == true);
-    CHECK(is_palindrome("abba") == true);
-    CHECK(is_palindrome("abc") == false);
+TEST_CASE("count_words counts words") {
+    CHECK(count_words("") == 0);
+    CHECK(count_words("Word!") == 1);
+    CHECK(count_words("Thing1 and Thing2") == 3);
+    CHECK(count_words("This is the song that never ends.") == 7);
 }
