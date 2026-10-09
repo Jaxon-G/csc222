@@ -13,15 +13,15 @@ string mock(string s) {
                 result += toupper(s[i]);
             }
             else {
-                result += tolower(s[i];
+                result += tolower(s[i]);
             }
+            uppercase = !uppercase;
         }
-        upper = !upper;
         else {
             result += s[i];
         }
     }
-    return result:
+    return result;
 }
 
 
