@@ -6,7 +6,10 @@ using namespace std;
 // Your function goes here
 string shout(string s){
     string new_string;
-    new_string = s.substr(0, s.length()-2) + "!";
+    for (int i = 0; i < s.length(); i++){
+        new_string += toupper(s[i]);
+    }
+    new_string = new_string.substr(0, s.length()-1) + "!";
     return new_string;
 }
 
