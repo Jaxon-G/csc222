@@ -5,11 +5,11 @@ using namespace std;
 
 // Your function goes here
 bool is_palindrome(string s){
-    return true;
+    if (s.length() <= 1){
+        return true;
+    }
+    return false;
 }
-
-
-
 
 TEST_CASE("is_palindrome detects palindromes") {
     CHECK(is_palindrome("") == true);
