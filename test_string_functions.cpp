@@ -16,6 +16,7 @@ string mock(string s) {
                 result += tolower(s[i];
             }
         }
+        upper = !upper;
         else {
             result += s[i];
         }
