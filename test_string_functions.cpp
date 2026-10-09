@@ -5,7 +5,14 @@ using namespace std;
 
 // Your function goes here
 int count_words(string s){
-    return 1;
+    char space = ' ';
+    int words = 0;
+    for (int i = 0; i < s.length(); i++){
+        if(s[i] == space){
+            words++;
+       }
+    }
+    return words+1;
 }
 
 TEST_CASE("count_words counts words") {
