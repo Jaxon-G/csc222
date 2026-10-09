@@ -6,16 +6,23 @@ using namespace std;
 // Your function goes here
 string mock(string s) {
     string result;
-
+    bool uppercase = false;
     for(int i = 0; i < s.length(); i++){
-        if (isalpha(s[i]){
-                   //idk
+        if (isalpha(s[i])){
+            if (uppercase){
+                result += toupper(s[i]);
+            }
+            else {
+                result += tolower(s[i];
+            }
         }
         else {
             result += s[i];
         }
     }
+    return result:
 }
+
 
 TEST_CASE("mock turns a string into a SpongeBob meme") {
     CHECK(mock("We are learning C++.") == "wE aRe lEaRnInG c++.");
