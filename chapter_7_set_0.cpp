@@ -11,9 +11,18 @@ struct Rectangle {
     double width, height;
 };
 
-Rectangle box = {{0,0, 0,0}, 100.0, 200.0};
-
 Point lower_right(const Rectangle& box) {
     Point result = {box.corner.x + box.width, box.corner.y - box.height};
     return result;
+}
+
+double find_area(const Rectangle& box) {
+    return box.width * box.height;
+}
+
+int main(){
+    Rectangle box = {{0.0, 0.0}, 100.0, 200.0};
+    Point lr = lower_right(box);
+    cout << lr.x << ", " << lr.y << endl;
+    cout << find_area(box) << endl;
 }
