@@ -4,25 +4,19 @@ using namespace std;
 struct A
 {
     int a;
-    float b;
+    char b;
 };
 
 struct B
 {
+    char a;
     int b;
-    float a;
-};
-
-struct C
-{
-    A a;
-    B b;
 };
 
 int main() {
-    C c1 = {1, 2, 3, 4}, c2 = {5, 6, 7, 8};
-    cout << c1.b.a + c2.a.b << endl;
+    A a = {2, 'A'};
+    B b = {'C', 1};
+    cout << b.a - a.b - b.b + a.a << endl;
 
     return 0;
 }
-
