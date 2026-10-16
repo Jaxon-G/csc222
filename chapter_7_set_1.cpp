@@ -1,22 +1,20 @@
 #include <iostream>
 using namespace std;
 
-struct A
-{
-    int a;
-    char b;
-};
+int f(int n) {
+    ++n;
+    return n++;
+}
 
-struct B
-{
-    char a;
-    int b;
-};
+int f2(int &n) {
+    ++n;
+    return n++;
+}
 
 int main() {
-    A a = {2, 'A'};
-    B b = {'C', 1};
-    cout << b.a - a.b - b.b + a.a << endl;
-
+    int x = 2, y, z;
+    y = f(x);
+    z = f2(y);
+    cout << x + y + z << endl;
     return 0;
 }
