@@ -6,7 +6,7 @@ void showElement(int nums[], int index) {
 }
 
 void addElements(int nums[], int index1, int index2){
-    cout << "nums [" << index << "] + nums[" << index2 << "] = ";
+    cout << "nums [" << index1 << "] + nums[" << index2 << "] = ";
     cout << nums[index1] +nums[index2] << endl;
 
 }
@@ -20,12 +20,16 @@ int main(){
         showElement(nums, i);
     }
 
+    cout << endl;    
+
     cout << "Outside the array:" << endl;
     for (int i = 4; i < 8; i++) {
         showElement(nums, i);
     }
 
+    cout << endl;
 
+    cout << "Using the 'garbage' in calculations" << endl;
     addElements(nums, 5, 6);
     return 0;
 
