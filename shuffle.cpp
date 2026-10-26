@@ -39,13 +39,15 @@ int main(){
     cout << "Array before shuffle: ";
     printArray(array, 5);
 
-    cout << "Array after shuffle with pure function";
+    cout << "Array after shuffle with pure function: ";
     shuffleClone(array, otherArray, 5);
+    printArray(otherArray, 5);
 
-    cout << "Original Array (still the same)";
+    cout << "Original Array (still the same): ";
     printArray(array, 5);
 
-    cout<< "Original array after shuffle with modifier function";
+    cout<< "Original array after shuffle with modifier function: ";
     shuffle(array, 5);
+    printArray(array, 5);
     return 0;
 }
