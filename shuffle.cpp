@@ -4,7 +4,7 @@
 using namespace std;
 
 void printArray(int a[], int size){
-    for (int i = 0, i < size; i++){
+    for (int i = 0; i < size; i++){
         cout << a[i] << " ";
     }
     cout << endl;
@@ -17,6 +17,7 @@ void shuffle(int a[], int size){
         a[i] = a[j];
         a[j] = temp;
     }
+}
 
 void shuffleClone(int original[], int result[], int size){
     for (int i = 0; i < size; i++){
@@ -30,7 +31,7 @@ void shuffleClone(int original[], int result[], int size){
 }
 
 int main(){
-    srand(time(null));
+    srand(time(NULL));
     
     int array[5] = {1, 2, 3, 4, 5};
     int otherArray[5];
@@ -45,6 +46,6 @@ int main(){
     printArray(array, 5);
 
     cout<< "Original array after shuffle with modifier function";
-    shufffle(array, 5);
+    shuffle(array, 5);
     return 0;
 }
