@@ -12,7 +12,10 @@ void printArray(int a[], int size){
 
 void shuffle(int a[], int size){
     for (int i = 0; i < size; i++){
-    
+        int j = rand() % size;
+        int temp = a[i];
+        a[i] = a[j]
+        a[j] = temp;
     }
 }
 
