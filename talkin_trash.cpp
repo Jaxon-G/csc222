@@ -12,5 +12,9 @@ int main(){
     cout << "nums[4] is " << nums[4] << endl;
     cout << "nums[5] is " << nums[5] << endl;
     cout << "nums[6] is " << nums[6] << endl;
-    
+
+    int result = nums[6] + 100;
+    cout << "nums[6] + 100 is " << result << endl;
+    return 0;
+
 }
