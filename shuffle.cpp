@@ -33,9 +33,18 @@ int main(){
     srand(time(null));
     
     int array[5] = {1, 2, 3, 4, 5};
+    int otherArray[5];
 
     cout << "Array before shuffle: ";
     printArray(array, 5);
 
+    cout << "Array after shuffle with pure function";
+    shuffleClone(array, otherArray, 5);
+
+    cout << "Original Array (still the same)";
+    printArray(array, 5);
+
+    cout<< "Original array after shuffle with modifier function";
+    shufffle(array, 5);
     return 0;
 }
