@@ -10,13 +10,22 @@ void printArray(int a[], int size){
     cout << endl;
 }
 
-
+void shuffle(int a[], int size){
+    for (int i = 0; i < size; i++){
+    
+    }
+}
 
 
 
 
 int main(){
     srand(time(null));
+    
+    int array[5] = {1, 2, 3, 4, 5};
+
+    cout << "Array before shuffle: ";
+    printArray(array, 5);
 
     return 0;
 }
