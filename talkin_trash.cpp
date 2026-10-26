@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+void showElement(int nums[], int index) {
+    cout << "nums[" << index << "] is " << nums[index] << endl;
+}
+
+
 int main(){
 
     int nums[4] = {10, 20, 30, 40};
