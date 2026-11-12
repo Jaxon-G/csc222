@@ -12,3 +12,8 @@ string render_num_vector(const vector<int>& vector) {
     }
     return s;
 }
+
+
+int num_vector_sum(const vector<int>& nums){
+    return 0;
+}
