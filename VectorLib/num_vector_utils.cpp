@@ -15,5 +15,11 @@ string render_num_vector(const vector<int>& vector) {
 
 
 int num_vector_sum(const vector<int>& nums){
-    return 0;
+
+    int total = 0;
+
+    for (int i = 0; i < nums.size(); i++) {
+        total += nums[i];
+    }
+    return total;
 }
