@@ -23,4 +23,7 @@ TEST_CASE("Testing render_num_vectors with other sizes") {
     CHECK(render_num_vector(five) == "5 10 15 20 25");
 }
 
-
+TEST_CASE("Testing num_vector_sum") {
+    vector<int> nums = {1, 3, 7};
+    CHECK(11 == num_vector_sum(nums));
+}
