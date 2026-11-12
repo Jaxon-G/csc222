@@ -16,9 +16,11 @@ TEST_CASE("Testing render_num_vector") {
 TEST_CASE("Testing render_num_vectors with other sizes") {
     vector<int> one = {5};
     vector<int> empty = {};
+    vector<int> five = {5, 10, 15, 20, 25};
 
     CHECK(render_num_vector(one) == "5");
     CHECK(render_num_vector(empty) == "");
+    CHECK(render_num_vector(five) == "5 10 15 20 25");
 }
 
 
