@@ -37,11 +37,17 @@ int num_vector_product(const vector<int>& nums) {
 vector<int> only_evens(const vector<int>& nums) {
     vector<int> result;
 
-    for (i = 0; i < nums.size(); i++) {
+    for (int i = 0; i < nums.size(); i++) {
         if (nums[i] % 2 == 0) {
-            result.push_back(nums[i];
+            result.push_back(nums[i]);
         }
     }
     
+    return result;
+}
+
+vector<int> only_odds(const vector<int>& nums) {
+    vector<int> result;
+
     return result;
 }
