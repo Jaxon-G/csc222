@@ -33,3 +33,9 @@ int num_vector_product(const vector<int>& nums) {
     }
     return total;
 }
+
+vector<int> only_evens(const vector<int>& nums) {
+    vector<int> result;
+
+    return result;
+}
