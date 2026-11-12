@@ -25,5 +25,10 @@ TEST_CASE("Testing render_num_vectors with other sizes") {
 
 TEST_CASE("Testing num_vector_sum") {
     vector<int> nums = {1, 3, 7};
+    vector<int> empty = {};
+    vector<int> negative = {-3, -5, 5, 0}
+    
     CHECK(11 == num_vector_sum(nums));
+    CHECK(0 == num_vector_sum(empty));
+    CHECK(-3 == num_vector_sum(negative));
 }
