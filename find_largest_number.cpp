@@ -8,6 +8,19 @@ int find_largest_number(string n, int digit1, int digit2) {
 }
 
 int main() {
+    string n;
+    int digit1;
+    int digit2;
+
+    cout << "Enter a number: " << endl;
+    cin >> n;
+
+    cout << "Enter a digit: " << endl;
+    cin >> digit1;
+
+    cout << "Enter a digit: " << endl;
+    cin >> digit2;
+
     return 0;
 }
 
