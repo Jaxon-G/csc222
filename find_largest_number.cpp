@@ -4,10 +4,23 @@
 using namespace std;
 
 int find_largest_number(string n, int digit1, int digit2) {
-    return 1;
+    int result;
+
+    for (int i = 0; i < n.length() - 1; i++) {
+        for (int j = 0; j < n.length() - 1 - i; j++) {
+            if (n[j] < n[j+1]) {
+                swap(n[j], n[j+1]);
+            }
+        }
+    }
+
+
+
+    return result;
 }
 
 int main() {
+    
     string n;
     int digit1;
     int digit2;
@@ -21,6 +34,8 @@ int main() {
     cout << "Enter a digit: " << endl;
     cin >> digit2;
 
+    cout << find_largest_number(n, digit1, digit2) << endl;
+    
     return 0;
 }
 
