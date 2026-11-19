@@ -8,13 +8,15 @@ int find_largest_number(string n, int digit1, int digit2) {
 
     for (int i = 0; i < n.length() - 1; i++) {
         for (int j = 0; j < n.length() - 1 - i; j++) {
-            if (n[j] < n[j+1]) {
+            if (n[j]-'0' < n[j+1]-'0') {
                 swap(n[j], n[j+1]);
             }
         }
     }
 
-
+    for (int i = 0; i < n.length() - 1; i++) {
+        if (n[i] < digit1)
+    }
 
     return result;
 }
