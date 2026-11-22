@@ -14,8 +14,10 @@ int find_largest_number(string n, int digit1, int digit2) {
         }
     }
 
-    for (int i = 0; i < n.length() - 1; i++) {
-        if (n[i] < digit1)
+     for (int i = 0; i < n.length() - 1; i++){
+        if (n[i]-'0' < digit1) {
+            
+        }
     }
 
     return result;
@@ -43,4 +45,7 @@ int main() {
 
 TEST_CASE("find_largest_number returns the largest number of 2 digits inserted into another number") {
     CHECK(find_largest_number(123, 5, 4) == 54123);
+    CHECK(find_largest_number(532, 4, 9) == 95432);
+    CHECK(find_largest_number(321, 2, 2) == 32221);
+    CHECK(find_largest_number(13, 0, 0) == 1300);
 }
