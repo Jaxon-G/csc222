@@ -19,7 +19,15 @@ int find_largest_number(string n, int digit1, int digit2) {
             }
             result += n[j];
         }
+
+        if (!placed) {
+            result += d;
+        }
+
+        n = result;
     }
+
+    return stoi(n);
 }
 
 int main() {
