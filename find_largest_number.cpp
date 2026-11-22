@@ -13,8 +13,8 @@ int find_largest_number(string n, int digit1, int digit2) {
         bool placed = false;
         
         for (int j = 0; j < (int)n.length(); j++) {
-            if (!placed && n[i] < d) {
-                result += d;
+            if (!placed && n[j] < digit) {
+                result += digit;
                 placed = true;
             }
             result += n[j];
