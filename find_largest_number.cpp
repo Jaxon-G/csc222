@@ -1,26 +1,18 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest.h>
 #include <string>
+#include<iostream>
 using namespace std;
 
 int find_largest_number(string n, int digit1, int digit2) {
-    int result;
+    int digits[2] = {digit1, digit2};
 
-    for (int i = 0; i < n.length() - 1; i++) {
-        for (int j = 0; j < n.length() - 1 - i; j++) {
-            if (n[j]-'0' < n[j+1]-'0') {
-                swap(n[j], n[j+1]);
-            }
-        }
+    for (int i = 0; i < 2; i++){
+        char digit = '0' +digits[i];
+        string result = "";
+        bool placed = false;
     }
 
-     for (int i = 0; i < n.length() - 1; i++){
-        if (n[i]-'0' < digit1) {
-            
-        }
-    }
-
-    return result;
 }
 
 int main() {
