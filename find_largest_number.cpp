@@ -11,8 +11,15 @@ int find_largest_number(string n, int digit1, int digit2) {
         char digit = '0' +digits[i];
         string result = "";
         bool placed = false;
+        
+        for (int j = 0; j < (int)n.length(); j++) {
+            if (!placed && n[i] < d) {
+                result += d;
+                placed = true;
+            }
+            result += n[j];
+        }
     }
-
 }
 
 int main() {
