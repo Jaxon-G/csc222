@@ -6,7 +6,7 @@ int find_largest_number(string n, int digit1, int digit2) {
     int digits[2] = {digit1, digit2};
 
     for (int i = 0; i < 2; i++){
-        char digit = '0' +digits[i];
+        char digit = '0' + digits[i];
         string result = "";
         bool placed = false;
         
